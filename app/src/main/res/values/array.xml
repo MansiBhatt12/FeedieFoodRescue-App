@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="example_One">
+        <item>This</item>
+        <item>is</item>
+        <item>Example</item>
+
+    </string-array>
+
+    <string-array name="example_two">
+        <item>This</item>
+        <item>is</item>
+        <item>Example</item>
+
+    </string-array>
+
+</resources>

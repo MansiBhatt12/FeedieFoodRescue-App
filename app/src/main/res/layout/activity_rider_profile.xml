@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".rider.RiderProfileActivity"
+    android:orientation="vertical"
+    android:background="@color/prof">
+
+
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:mbn_backgroundBottomColor="@color/coloryellow"
+        app:mbn_circleColor="@color/white"
+        app:mbn_countBackgroundColor="@color/warningColor"
+        app:mbn_countTextColor="@color/white"
+        app:mbn_defaultIconColor="@color/white"
+        app:mbn_selectedIconColor="@color/coloryellow"
+        app:mbn_shadowColor="@color/white" />
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/profileback" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileimg"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/profile"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="5dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/changeProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="200dp"
+                    android:src="@drawable/ic_image"
+                    app:borderWidth="12dp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.678"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView9"
+                    app:rippleColor="@color/blacks" />
+
+                <TextView
+                    android:id="@+id/profileusername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/profileimg"
+                    app:layout_constraintStart_toStartOf="@+id/profileimg"
+                    app:layout_constraintTop_toBottomOf="@+id/profileimg" />
+
+                <TextView
+                    android:id="@+id/profileemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profileusername" />
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profileemail">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/baloo"
+                        android:text="Full Name"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/txtusername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext"
+                        android:drawablePadding="23dp"
+                        android:hint="Username"
+                        android:paddingLeft="20dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/baloo"
+                        android:text="Email"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/txtemail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext"
+                        android:drawablePadding="23dp"
+                        android:hint="Email"
+                        android:paddingLeft="20dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/baloo"
+                        android:text="National ID"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/txtid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext"
+                        android:drawablePadding="23dp"
+                        android:hint="National ID"
+                        android:paddingLeft="20dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/baloo"
+                        android:text="Mobile Number"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/txtmobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext"
+                        android:drawablePadding="23dp"
+                        android:hint="Mobile"
+                        android:paddingLeft="20dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/baloo"
+                        android:text="Vehicle No"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/txtvehicleno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext"
+                        android:drawablePadding="23dp"
+                        android:hint="Vehicle No"
+                        android:paddingLeft="20dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/baloo"
+                        android:text="Vehicle Type"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/txtvehicletype"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext"
+                        android:drawablePadding="23dp"
+                        android:hint="Vehicle Type"
+                        android:paddingLeft="20dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/save"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="60dp"
+                        android:background="@drawable/success_style"
+                        android:text="Update Details"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="@font/baloo"
+                        android:textSize="18sp"
+                        />
+
+                    <Button
+                        android:id="@+id/resetPasswordLocal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="60dp"
+                        android:background="@drawable/success_style"
+                        android:text="Reset Password"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/baloo"
+                        android:textSize="18sp"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="invisible"
+                        android:layout_marginTop="10dp"/>
+
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

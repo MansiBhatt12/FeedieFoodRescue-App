@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Food-Donation-App_ReCustomize-main/app/src/main/res/layout/activity_all_donations.xml" value="0.25" />
+        <entry key="..\:/Food-Donation-App_ReCustomize-main/app/src/main/res/layout/activity_history.xml" value="0.25" />
+        <entry key="..\:/Food-Donation-App_ReCustomize-main/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Food-Donation-App_ReCustomize-main/app/src/main/res/layout/activity_register.xml" value="0.234375" />
+        <entry key="..\:/Food-Donation-App_ReCustomize-main/app/src/main/res/layout/activity_signup.xml" value="0.234375" />
+        <entry key="..\:/Food-Donation-App_ReCustomize-main/app/src/main/res/layout/donater_history.xml" value="0.25" />
+        <entry key="..\:/Food-Donation-App_ReCustomize-main/app/src/main/res/layout/item.xml" value="0.25" />
+        <entry key="..\:/waste management/Waste food project with admin panel/Waste food project with admin panel/Food-Donation-App_ReCustomize-main/Food-Donation-App_ReCustomize-main/app/src/main/res/layout/activity_all_donations.xml" value="0.25" />
+        <entry key="..\:/waste management/Waste food project with admin panel/Waste food project with admin panel/Food-Donation-App_ReCustomize-main/Food-Donation-App_ReCustomize-main/app/src/main/res/layout/activity_donation.xml" value="0.25" />
+        <entry key="..\:/waste management/Waste food project with admin panel/Waste food project with admin panel/Food-Donation-App_ReCustomize-main/Food-Donation-App_ReCustomize-main/app/src/main/res/layout/activity_donation_list.xml" value="0.25" />
+        <entry key="..\:/waste management/Waste food project with admin panel/Waste food project with admin panel/Food-Donation-App_ReCustomize-main/Food-Donation-App_ReCustomize-main/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/waste management/Waste food project with admin panel/Waste food project with admin panel/Food-Donation-App_ReCustomize-main/Food-Donation-App_ReCustomize-main/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/waste management/Waste food project with admin panel/Waste food project with admin panel/Food-Donation-App_ReCustomize-main/Food-Donation-App_ReCustomize-main/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/waste management/Waste food project with admin panel/Waste food project with admin panel/Food-Donation-App_ReCustomize-main/Food-Donation-App_ReCustomize-main/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/waste management/Waste food project with admin panel/Waste food project with admin panel/Food-Donation-App_ReCustomize-main/Food-Donation-App_ReCustomize-main/app/src/main/res/layout/activity_rider_history.xml" value="0.25" />
+        <entry key="..\:/waste management/Waste food project with admin panel/Waste food project with admin panel/Food-Donation-App_ReCustomize-main/Food-Donation-App_ReCustomize-main/app/src/main/res/layout/activity_rider_home.xml" value="0.25" />
+        <entry key="..\:/waste management/Waste food project with admin panel/Waste food project with admin panel/Food-Donation-App_ReCustomize-main/Food-Donation-App_ReCustomize-main/app/src/main/res/layout/activity_rider_register.xml" value="0.25" />
+        <entry key="..\:/waste management/Waste food project with admin panel/Waste food project with admin panel/Food-Donation-App_ReCustomize-main/Food-Donation-App_ReCustomize-main/app/src/main/res/layout/activity_signup.xml" value="0.25" />
+        <entry key="..\:/waste management/Waste food project with admin panel/Waste food project with admin panel/Food-Donation-App_ReCustomize-main/Food-Donation-App_ReCustomize-main/app/src/main/res/layout/donater_history.xml" value="0.25" />
+        <entry key="..\:/waste management/Waste food project with admin panel/Waste food project with admin panel/Food-Donation-App_ReCustomize-main/Food-Donation-App_ReCustomize-main/app/src/main/res/menu/main_menu.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

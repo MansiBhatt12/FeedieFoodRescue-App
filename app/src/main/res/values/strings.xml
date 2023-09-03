@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Feedie Food Rescue</string>
+    <string name="main_note"></string>
+    <string name="hint">e.g KA-1010, 15-3456</string>
+    <string name="find_btn">Find</string>
+    <string name="first_slide_desc">We always welcome donations and promise to use them to provide help to Homeless People and Animals in crisis! </string>
+    <string name="welcom_note"></string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <string name="warning_title">Logout</string>
+    <string name="dummy_text">Sure U want to logout this Application</string>
+    <string name="okay">OKay</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="title_activity_retrieve_map">Map</string>
+
+
+    <string name="home_donation">"You can check donation History \n Every time"</string>
+
+
+    <string name="main_page_selected">"%s page is selected"</string>
+</resources>

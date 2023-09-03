@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_gradient" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Profile"
+        android:textStyle="bold"
+        android:layout_marginTop="-40dp"
+        android:height="30dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="vertical"
+                >
+
+
+                <ImageView
+                    android:id="@+id/profilefull"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                     />
+
+                <TextView
+                    android:id="@+id/proftext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="W E L C O M E"
+                    android:layout_marginTop="-230dp"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo"
+                    android:gravity="center_horizontal" />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome To Profile"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/baloo"
+                    android:textSize="20dp"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/changeProfile"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_gravity="right"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="-20dp"
+                android:background="@drawable/button_style"
+                android:fontFamily="@font/baloo"
+                android:text="Chage Profile"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="-130dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="left"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/user"/>
+
+
+            <ScrollView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="21dp"
+                   android:layout_marginRight="50dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_gravity="left"
+                   android:text="Username"
+                   android:fontFamily="@font/baloo"
+                   android:textSize="15dp"
+                   />
+
+                <EditText
+                    android:id="@+id/profileName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:clickable="true"
+                    android:cursorVisible="true"
+                    android:focusable="true"
+                    android:inputType="text"
+                    android:layout_marginHorizontal="20dp"
+                    android:textColor="@color/textcolor"
+                    android:background="@drawable/input_style"
+                    android:drawableRight="@drawable/ic_user"
+                    android:hint="Your Name"
+                    android:layout_gravity="center"
+                    android:paddingRight="50dp"
+                    android:paddingLeft="30dp"
+                    android:fontFamily="@font/baloo"
+
+                    />
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/editusername"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/ic_edit"-->
+<!--                    android:layout_gravity="right"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:layout_marginTop="-40dp"-->
+<!--                    android:background="@color/white"-->
+<!--                    />-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_gravity="left"
+                    android:text="Email"
+                    android:fontFamily="@font/baloo"
+                    android:textSize="15dp"
+                    />
+
+                <EditText
+                    android:id="@+id/profileEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/input_style"
+                    android:drawableRight="@drawable/ic_email"
+                    android:hint="Your Email Address"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/textcolor"
+                    android:layout_gravity="right"
+                    android:layout_marginHorizontal="20dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:fontFamily="@font/baloo"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="left"
+                    android:text="Mobile"
+                    android:fontFamily="@font/baloo"
+                    android:textSize="15dp"
+                    />
+
+                <EditText
+                    android:id="@+id/profilePhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:padding="10dp"
+                    android:clickable="true"
+                    android:cursorVisible="true"
+                    android:inputType="phone"
+                    android:focusable="true"
+                    android:maxLength="10"
+                    android:background="@drawable/input_style"
+                    android:drawableRight="@drawable/ic_phone"
+                    android:hint="Your Phone"
+                    android:textColor="@color/textcolor"
+                    android:layout_gravity="right"
+                    android:paddingRight="50dp"
+                    android:paddingLeft="10dp"
+                    android:fontFamily="@font/baloo"
+                    />
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/editphone"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/ic_edit"-->
+<!--                    android:layout_gravity="right"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:cursorVisible="true"-->
+<!--                    android:layout_marginTop="-40dp"-->
+<!--                    android:background="@color/white"-->
+<!--                    />-->
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="60dp"
+                    android:background="@drawable/success_style"
+                    android:text="Update Details"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/baloo"
+                    android:textSize="18sp"
+                    />
+
+                <Button
+                    android:id="@+id/resetPasswordLocal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="60dp"
+                    android:background="@drawable/success_style"
+                    android:text="Reset Password"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/baloo"
+                    android:textSize="18sp"
+                    />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+
+            </ScrollView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-50dp"
+                android:onClick="backflotingbtn"
+                android:layout_gravity="left"
+                android:foregroundGravity="center"
+                android:scaleType="fitXY"
+                android:layout_marginHorizontal="12dp"
+                android:src="@drawable/ic_arrow_back"
+                app:maxImageSize="30dp"
+                app:pressedTranslationZ="1dp"
+                />
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

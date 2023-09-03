@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Reciver.SignupActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_gradient" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reciver Register"
+        android:textStyle="bold"
+        android:layout_marginTop="-40dp"
+        android:height="30dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal" />
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottie"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="20dp"
+                android:elevation="2dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.25"
+                app:lottie_autoPlay="true"
+                app:lottie_rawRes="@raw/register"
+                app:lottie_repeatCount="1000"
+                app:lottie_repeatMode="restart" />
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome To Register"
+                android:textAlignment="center"
+                android:fontFamily="@font/baloo"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/first_slide_desc"
+                android:gravity="center_horizontal" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/input_style"
+                android:hint="User Name"
+                android:drawableRight="@drawable/ic_user"
+                android:paddingRight="15dp"
+                android:layout_gravity="center"
+                android:textColor="#0d6e6a"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="20dp"
+                />
+
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/input_style"
+                android:hint="Email"
+                android:drawableRight="@drawable/ic_email"
+                android:paddingRight="15dp"
+                android:inputType="textEmailAddress"
+                android:layout_gravity="center"
+                android:textColor="#0d6e6a"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                />
+
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_style"
+                android:drawableRight="@drawable/ic_phone"
+                android:hint="Phone"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:paddingLeft="20dp"
+                android:paddingRight="15dp"
+                android:textColor="#0d6e6a"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/input_style"
+                android:hint="Password"
+                android:drawableRight="@drawable/ic_password"
+                android:layout_gravity="center"
+                android:textColor="#0d6e6a"
+                android:paddingRight="15dp"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:inputType="textPassword"
+                />
+
+
+
+            <Button
+                android:id="@+id/registerBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button_style"
+                android:text="Register"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#FFF"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/do_not_have_acc_btn"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Do you have an account? Login."
+                android:textColor="#F78D46"
+                android:textStyle="bold"
+                />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+
+                />
+            <TextView
+                android:id="@+id/riderregister"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Do you want to be a Rider? Register"
+                android:textColor="#F78D46"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".DonationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/top_gradient" />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-40dp"
+        android:height="30dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center_horizontal"
+        android:text="Add Donation"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/input_style"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="3dp"
+                    android:drawableRight="@drawable/ic_type"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/baloo"
+                    android:text="Donation Type"
+                    android:textSize="18dp" />
+
+                <RadioButton
+                    android:id="@+id/onlypeople"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:textColorHighlight="@color/warningColor"
+                    android:text="Only People"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/lineColor" />
+
+                <RadioButton
+                    android:id="@+id/onlyanimals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Only Animals"
+                    android:textSize="18sp" />
+
+
+                <RadioButton
+                    android:id="@+id/both"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginTop="-85dp"
+                    android:paddingLeft="10dp"
+                    android:text="Both"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/input_style"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="3dp"
+                    android:drawableRight="@drawable/ic_weight"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/baloo"
+                    android:text="Donation Weight Type"
+                    android:textSize="18dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/lineColor" />
+
+                <RadioButton
+                    android:id="@+id/weght1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="1-10Kg"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/lineColor" />
+
+                <RadioButton
+                    android:id="@+id/weght2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginTop="-50dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:text="10-30Kg"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/weght3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="30-50Kg"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/weght4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="-30dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:text="50-100Kg"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/input_style"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_marginBottom="5dp"
+                    android:drawableRight="@drawable/ic_vehicle"
+                    android:fontFamily="@font/baloo"
+                    android:text="Suggest Vehicle Type"
+                    android:textSize="18dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/lineColor" />
+
+                <RadioButton
+                    android:id="@+id/vehicle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Bike"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/lineColor" />
+
+                <RadioButton
+                    android:id="@+id/vehicle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginHorizontal="57dp"
+                    android:layout_marginTop="-53dp"
+                    android:paddingLeft="10dp"
+                    android:text="Car"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/lineColor" />
+
+                <RadioButton
+                    android:id="@+id/vehicle3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="Van"
+                    android:textSize="18sp" />
+
+
+
+                <RadioButton
+                    android:id="@+id/vehicle4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginTop="-33dp"
+                    android:paddingLeft="10dp"
+                    android:text="Truck"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/baloo"
+                android:text="Address"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:drawableRight="@drawable/ic_address"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/input_style"
+                android:fontFamily="@font/baloo"
+                android:hint="Address"
+                android:padding="10dp"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/baloo"
+                android:text="District"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/district"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/input_style"
+                android:drawableRight="@drawable/ic_street"
+                android:fontFamily="@font/baloo"
+                android:hint="Street"
+                android:padding="10dp"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/baloo"
+                android:text="Mobile No"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/input_style"
+                android:drawableRight="@drawable/ic_phone"
+                android:editable="false"
+                android:fontFamily="@font/baloo"
+                android:hint="Mobile Number"
+                android:padding="10dp"
+                android:textSize="18dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/input_style"
+                android:orientation="vertical"
+
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/baloo"
+                    android:text="Location"
+                    android:drawableLeft="@drawable/ic_location_red"
+                    android:textSize="18dp" />
+
+                <ImageButton
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:onClick="refresh"
+                    android:src="@drawable/ic_refresh"
+                    android:tooltipText="Refresh"
+                    android:background="@color/white"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/lineColor" />
+
+                <EditText
+                    android:id="@+id/tv_latitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/input_style"
+                    android:editable="false"
+                    android:fontFamily="@font/baloo"
+                    android:hint="Latitude"
+                    android:padding="10dp"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/tv_longitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginHorizontal="80dp"
+                    android:layout_marginTop="-53dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/input_style"
+                    android:editable="false"
+                    android:fontFamily="@font/baloo"
+                    android:hint="Longitude"
+                    android:padding="10dp"
+                    android:textSize="18dp" />
+
+
+            </LinearLayout>
+
+
+            <!--            <TextView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="Location"-->
+            <!--                android:layout_marginHorizontal="20dp"-->
+            <!--                android:fontFamily="@font/baloo"-->
+            <!--                android:textSize="18dp"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:layout_marginBottom="5dp"/>-->
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/lat"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:padding="10dp"-->
+            <!--                android:hint="Latitude"-->
+            <!--                android:editable="false"-->
+            <!--                android:layout_marginHorizontal="20dp"-->
+            <!--                android:fontFamily="@font/baloo"-->
+            <!--                android:background="@drawable/input_style"-->
+            <!--                android:textSize="18dp"-->
+            <!--                android:layout_marginBottom="5dp"/>-->
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/longi"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:padding="10dp"-->
+            <!--                android:hint="Longitude"-->
+            <!--                android:layout_marginTop="-53dp"-->
+            <!--                android:layout_gravity="right"-->
+            <!--                android:editable="false"-->
+            <!--                android:layout_marginHorizontal="80dp"-->
+            <!--                android:fontFamily="@font/baloo"-->
+            <!--                android:background="@drawable/input_style"-->
+            <!--                android:textSize="18dp"-->
+            <!--                android:layout_marginBottom="5dp"/>-->
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_style"
+                android:text="Submit"
+                android:textColor="#FFF"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        android:onClick="backflotingbtn"
+        android:layout_gravity="left"
+        android:foregroundGravity="center"
+        android:scaleType="centerCrop"
+        android:layout_marginHorizontal="12dp"
+        android:src="@drawable/ic_arrow_back"
+        app:maxImageSize="30dp"
+        app:pressedTranslationZ="1dp"
+        />
+
+</LinearLayout>

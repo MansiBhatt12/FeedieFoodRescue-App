@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#0d6e6a</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="coloryellow">#ffca28</color>
+    <color name="blacks">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="text_hint">#b0bec5</color>
+
+
+    <color name="newyellow">#ff9900</color>
+    <color name="lineColor">#CDCDCD</color>
+
+    <color name="warningColor">#DC2222</color>
+    <color name="col_yellow">#CDDC39</color>
+    <color name="col_red">#FFF44B3E</color>
+    <color name="check">#ff9800</color>
+    <color name="checks">#FFFFFF</color>
+    <color name="textcolor">#615F5F</color>
+    <color name="bg_screen1">#f64c73</color>
+
+    <color name="colorPrimary1">#FF9301</color>
+    <color name="colorPrimaryDark1">#BC4444</color>
+    <color name="colorSecondary">#E75370</color>
+    <color name="colorSecondaryDark">#C35CEF</color>
+    <color name="iconcolor">#FF9301</color>
+    <color name="success">#0ED689</color>
+    <color name="colorNeutral">#434343</color>
+
+    <color name="colorhome">#FAF2DC</color>
+
+    <color name="card1">#d4cbe5</color>
+    <color name="card2">#7adccf</color>
+    <color name="card3">#f7c59f</color>
+    <color name="card4">#b8d7f5</color>
+    <color name="home_background">#f2f5f8</color>
+    <color name="home_backgrounds">#A2A4A5</color>
+    <color name="prof">#ECECEC</color>
+
+
+
+
+    <color name="shadow">#2E2E2E</color>
+
+
+</resources>

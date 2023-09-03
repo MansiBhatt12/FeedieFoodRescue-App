@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "816805232827",
+    "project_id": "feediefood-6baf2",
+    "storage_bucket": "feediefood-6baf2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816805232827:android:320fa1ee77cba1c1fba99e",
+        "android_client_info": {
+          "package_name": "com.mansibhatt.myfirstapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "816805232827-bnk5duis5k38c494jdu841i8puj25vm6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mansibhatt.myfirstapp",
+            "certificate_hash": "86bd17c83227cbbcd648c908fbec36fb2c0e3679"
+          }
+        },
+        {
+          "client_id": "816805232827-3b7surs1rm0t98hf0nooh9o6f1nlru3o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1Gl-J54Way2ucCHixrEz-sIK96j-JgyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "816805232827-3b7surs1rm0t98hf0nooh9o6f1nlru3o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
